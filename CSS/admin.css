@@ -1,0 +1,161 @@
+TextField:focused, PasswordField:focused{
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+
+}
+TextField, PasswordField{
+	-fx-border-color:grey;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;	
+
+}
+.mapTxt {
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;
+		-fx-text-fill: orange;	
+	
+}
+.btn {
+		-fx-background-color:#5D5D5D;
+		-fx-border-color:#5D5D5D;
+		-fx-text-fill: white;
+		-fx-font-weight: bold;	
+		-fx-font-family:"Malgun Gothic";
+	
+}
+Label{
+	-fx-alignment: CENTER;
+	-fx-font-family:"Malgun Gothic";
+	
+}
+.btn:hover {
+		-fx-background-color:white;
+		-fx-border-color:#5D5D5D;
+		-fx-text-fill: black;		
+		-fx-cursor: hand;
+		-fx-font-weight: bold;	
+		-fx-font-family:"Malgun Gothic";
+	
+}
+.combo-box {
+		-fx-background-color:white;
+		-fx-border-color:#5D5D5D;
+		-fx-text-fill: black;		
+		-fx-cursor: hand;
+		-fx-font-weight: bold;	
+		-fx-font-family:"Malgun Gothic";
+	
+}
+
+.menubar {
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-font-family:"Malgun Gothic";
+}
+.menu-bar .menu{
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-font-family:"Malgun Gothic";
+}
+.menu-bar .menu:hover, .menu-bar .menu:focused, .menu-bar .menu:showing {	
+		-fx-cursor: hand;
+		-fx-text-fill: black;
+		-fx-border-color: Orange;
+  	 	-fx-border-width: 0 0 2 0, 0 0 2 0, 0 0 2 0;  
+  	 	-fx-font-weight: bold;
+  	 	-fx-font-family:"Malgun Gothic";
+}
+.menu-item:showing:hover , .menu-item:showing .label:hover {
+		-fx-cursor: hand;
+		-fx-background-color:orange;
+		-fx-text-fill: white;
+		-fx-font-family:"Malgun Gothic";
+}
+
+.menu-bar .label:hover, .menu-bar .label:focused {
+		
+		-fx-cursor: hand;
+		-fx-background-color:orange;
+		-fx-text-fill: white;
+		-fx-font-family:"Malgun Gothic";
+}
+
+.menu-bar .menu-item:hover {		
+		-fx-cursor: hand;
+		-fx-background-color:orange;
+		-fx-text-fill: black;	
+		-fx-font-weight: bold;	
+		-fx-font-family:"Malgun Gothic";
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+	
+		-fx-cursor: hand;
+		-fx-text-fill: black;
+    -fx-background-color: orange;
+    -fx-font-family:"Malgun Gothic";
+}
+
+
+
+
+.table-view .column-header .label {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		
+}
+.table-view .column-header, .table-view .filler {
+		-fx-text-fill: black;
+		-fx-background-color:white;		
+}
+.table-view,.table-view:focused, .table-view .filler:focused {
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;		
+}
+.table-view:row-selection {
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+				
+}
+.table-row-cell {
+		-fx-background-color:white;
+		-fx-text-fill: black;		
+}
+.table-row-cell:focused {
+		-fx-background-color:#EAEAEA;
+		-fx-text-fill: white;		
+}
+.table-row-cell:filled:focused {
+		-fx-background-color:#EAEAEA;
+		-fx-text-fill: white;
+}
+.table-view .table-cell, .table-view .table-cell:focused{
+    -fx-text-fill: black;
+}
+
+
+.tab-pane .tab {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}
+
+.tab-pane {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}
+
+

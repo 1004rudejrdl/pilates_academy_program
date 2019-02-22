@@ -1,0 +1,33 @@
+.btn:hover {		
+		-fx-text-fill: white;
+		-fx-background-color:black;	
+		-fx-cursor:hand;
+	 	 
+}
+.btn {		
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: grey;
+			 	 
+}
+.combo-box {
+		-fx-background-color:white;
+		-fx-border-color:#5D5D5D;
+		-fx-text-fill: black;		
+		-fx-cursor: hand;
+		-fx-font-weight: bold;	
+		-fx-font-family:"Malgun Gothic";
+	
+}
+.underline:hover {		
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-cursor:hand;
+		-fx-border-color: Orange;
+  	 	-fx-border-width: 0 0 2 0, 0 0 2 0, 0 0 2 0;   	 
+}
+.underline {		
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-cursor:hand; 	 
+}

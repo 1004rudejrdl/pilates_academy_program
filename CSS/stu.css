@@ -1,0 +1,102 @@
+TextField:focused, PasswordField:focused{
+
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+}
+TextField, PasswordField{
+	-fx-border-color:grey;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;	
+
+}
+.namelabel {
+		-fx-font-family:"Baskerville Old Face";
+		-fx-font-weight: bold;	
+		-fx-font-size: 33;	
+
+}
+.menubar {
+		-fx-background-color:white;
+}
+.mapTxt {
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;
+		-fx-text-fill: orange;	
+	
+}
+
+#menuLabel, #menus, #menus:hover, #menus:focused {
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-cursor: hand;
+
+}
+#menus:hover, #menus:focused {
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-cursor: hand;
+}
+#menuLabel:hover, #menuLabel:focused {
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-cursor: hand;
+		-fx-border-color: Orange;
+  	 	-fx-border-width: 0 0 3 0, 0 0 3 0, 0 0 3 0;  
+}
+
+.menu-bar .menu:hover, .menu-bar .menu:focused, .menu-bar .menu:showing {	
+		-fx-cursor: hand;
+		-fx-text-fill: black;
+		-fx-border-color: Orange;
+  	 	-fx-border-width: 0 0 2 0, 0 0 2 0, 0 0 2 0;  
+  	 	-fx-font-weight: bold;
+}
+.menu-item:showing:hover , .menu-item:showing .label:hover {
+		-fx-cursor: hand;
+		-fx-background-color:orange;
+		-fx-text-fill: white;
+}
+
+.menu-bar .label:hover, .menu-bar .label:focused {
+		
+		-fx-cursor: hand; 
+		-fx-background-color:orange;
+		-fx-text-fill: white;
+}
+
+.menu-bar .menu-item:hover {		
+		-fx-cursor: hand;
+		-fx-background-color:orange;
+		-fx-text-fill: black;	
+		-fx-font-weight: bold;	
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+	
+		-fx-cursor: hand;
+		-fx-text-fill: black;
+    -fx-background-color: orange;
+}
+.oranBackColor:hover, .oranBackColor:focused {		
+		-fx-background-color:orange;
+}
+.tab-pane .tab {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}
+.tab-pane {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}

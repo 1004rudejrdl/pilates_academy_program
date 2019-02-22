@@ -1,0 +1,81 @@
+TextField:focused, PasswordField:focused{
+	-fx-font-weight:bold;
+}
+ComboBox, ComboBox:focused, select:focus, ComboBox:select, .combobox .select .option {
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: #5D5D5D;
+
+}
+
+.combo-box:row-selection {
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: #5D5D5D;
+
+}
+
+DatePicker {
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: #5D5D5D;
+	
+}
+
+.table-view .column-header .label {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		
+}
+.table-view .column-header, .table-view .filler {
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		
+}
+Label {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	 
+}
+
+
+
+.table-view .column-header .label {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		
+}
+.table-view .column-header, .table-view .filler {
+		-fx-text-fill: black;
+		-fx-background-color:white;		
+}
+.table-view,.table-view:focused, .table-view .filler:focused {
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;		
+}
+.table-view:row-selection {
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+				
+}
+.table-row-cell {
+		-fx-background-color:white;
+		-fx-text-fill: black;		
+}
+.table-row-cell:focused {
+		-fx-background-color:#EAEAEA;
+		-fx-text-fill: white;		
+}
+.table-row-cell:filled:focused {
+		-fx-background-color:#EAEAEA;
+		-fx-text-fill: white;
+}
+.table-view .table-cell, .table-view .table-cell:focused{
+    -fx-text-fill: black;
+}

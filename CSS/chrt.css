@@ -1,0 +1,68 @@
+TextField:focused, PasswordField:focused{
+
+	-fx-border-color:black;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+}
+TextField, PasswordField{
+	-fx-border-color:grey;
+		-fx-background-color:white;
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;	
+
+}
+.datelabel {
+		-fx-font-family:"Malgun Gothic";
+		-fx-alignment: CENTER;
+		-fx-font-weight: bold;	
+
+}
+.menubar {
+		-fx-background-color:white;
+}
+#menuLabel, #menus, #menus:hover, #menus:focused {
+		-fx-background-color:white;
+		-fx-text-fill: black;
+		-fx-cursor: hand;
+
+}
+.oranBackColor:hover, .oranBackColor:focused {		
+		-fx-background-color:orange;
+}
+.tab-pane .tab {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}
+.tab-pane {		
+		-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-border-color: #5D5D5D;
+}
+PieChart {
+	-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+	
+}
+BarChart {
+	-fx-font-family:"Malgun Gothic";
+		-fx-text-fill: black;
+	
+}
+
+.underline:hover, .underline:focused {		
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-cursor:hand;
+		-fx-border-color: Orange;
+  	 	-fx-border-width: 0 0 3 0, 0 0 3 0, 0 0 3 0;   	 
+}
+.underline {		
+		-fx-text-fill: black;
+		-fx-background-color:white;	
+		-fx-cursor:hand; 	 
+}
