@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="423.0" prefWidth="431.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="114.0" prefWidth="407.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ImageView id="joinTesting" fitHeight="132.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../images/cherishPilates.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="135.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="116.0" layoutY="60.0" prefHeight="29.0" prefWidth="84.0" style="-fx-font-family: 맑은 고딕;" text="회원가입" underline="true">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="33.0" prefWidth="323.0" style="-fx-font-family: 맑은 고딕;" text="PERSONAL INFORMATION">
+               <font>
+                  <Font name="Ebrima" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Separator prefHeight="16.0" prefWidth="353.0">
+               <padding>
+                  <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="37.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+      </HBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="98.0" style="-fx-font-family: 맑은 고딕;" text="이름 Name">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="joinName" prefHeight="31.0" prefWidth="340.0" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="246.0" style="-fx-font-family: 맑은 고딕;" text="이메일 주소 Email Address">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="joinId" prefHeight="31.0" prefWidth="340.0" promptText="ex) abc@cherishpilates.com" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="177.0" style="-fx-font-family: 맑은 고딕;" text="전화번호 Mobile">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="joinPhone" prefHeight="31.0" prefWidth="340.0" promptText="'-'없이 입력해주세요.  ex) 01055555486" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="237.0" style="-fx-font-family: 맑은 고딕;" text="생년월일 Date Of Birth">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="joinMonth" prefHeight="31.0" prefWidth="97.0" promptText="YYYY(년도)" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="joinMonth" prefHeight="31.0" prefWidth="84.0" promptText="MM(월)" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="joinDay" prefHeight="31.0" prefWidth="84.0" promptText="DD(일)" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="237.0" style="-fx-font-family: 맑은 고딕;" text="성별 Gender">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+                  <HBox prefHeight="24.0" prefWidth="245.0" spacing="30.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <CheckBox id="joinMale" mnemonicParsing="false" text="남성">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="15.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox id="joinFemale" mnemonicParsing="false" text="여성">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="15.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="192.0" style="-fx-font-family: 맑은 고딕;" text="프로필사진 Profile Photo">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView id="joinImg" fitHeight="104.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profile_photo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="33.0" prefWidth="323.0" style="-fx-font-family: 맑은 고딕;" text="LOGIN INFORMATION">
+               <font>
+                  <Font name="Ebrima" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Separator prefHeight="16.0" prefWidth="353.0">
+               <padding>
+                  <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="37.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+      </HBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="237.0" style="-fx-font-family: 맑은 고딕;" text="비밀번호 Password">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <PasswordField id="joinPW" prefWidth="340.0" promptText=" 숫자 6자리 입력" style="-fx-background-color: white; -fx-border-color: black;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="237.0" style="-fx-font-family: 맑은 고딕;" text="비밀번호확인 Check Password">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <PasswordField id="joinCheckPW" prefWidth="340.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="joinRegister" alignment="CENTER" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="가입">
+                     <font>
+                        <Font name="Malgun Gothic" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="145.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+                  <TextField id="joinCancel" alignment="CENTER" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="취소">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Malgun Gothic" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

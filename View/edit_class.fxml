@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="667.0" prefWidth="440.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="114.0" prefWidth="407.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Pane prefHeight="132.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView id="joinTesting" fitHeight="144.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../images/cherishPilates.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="109.0" layoutY="58.0" prefHeight="29.0" prefWidth="95.0" style="-fx-font-family: 맑은 고딕;" text="수업 수정" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="316.0" style="-fx-font-family: 맑은 고딕;" text="EDIT CLASS">
+                     <font>
+                        <Font name="Ebrima" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="48.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Separator prefHeight="16.0" prefWidth="363.0">
+                     <padding>
+                        <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="37.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+            </HBox>
+            <VBox prefHeight="467.0" prefWidth="440.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="74.0" style="-fx-font-family: 맑은 고딕;" text="수업날짜">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker id="edClsDate" disable="true" editable="false" promptText="Class Date">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="74.0" style="-fx-font-family: 맑은 고딕;" text="수업시간">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="edClsTime" disable="true" prefHeight="31.0" prefWidth="203.0" promptText="Class Time">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="82.0" style="-fx-font-family: 맑은 고딕;" text="ClassRoom">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="edClsRoom" disable="true" prefHeight="31.0" prefWidth="203.0" promptText="강의실">
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="74.0" style="-fx-font-family: 맑은 고딕;" text="Course">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="edClsCourse" prefHeight="31.0" prefWidth="203.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="81.0" style="-fx-font-family: 맑은 고딕;" text="Class Type">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="edClsCType" prefHeight="31.0" prefWidth="203.0" promptText="리포머/소도구">
+                           <HBox.margin>
+                              <Insets left="9.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="440.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="74.0" style="-fx-font-family: 맑은 고딕;" text="Teacher">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="48.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView id="edClsTeacherTV" prefHeight="203.0" prefWidth="344.0">
+                     <columns>
+                        <TableColumn prefWidth="209.0" text="ID" />
+                        <TableColumn prefWidth="136.0" text="Name" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="46.0" right="50.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="0.0" prefWidth="431.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <TextField id="edClsRegister" alignment="CENTER" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="등록">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="145.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField id="edClsExit" alignment="CENTER" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="취소">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

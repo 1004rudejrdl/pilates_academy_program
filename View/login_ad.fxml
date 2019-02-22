@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="235.0" prefWidth="418.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdmLoginController">
+	<children>
+		<HBox prefHeight="194.0" prefWidth="418.0">
+			<children>
+				<ImageView fx:id="adLogImg" fitHeight="168.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/cherishPilates.png" />
+					</image>
+				</ImageView>
+				<AnchorPane prefHeight="186.0" prefWidth="203.0">
+					<children>
+						<TextField fx:id="adLogId" layoutX="-81.0" layoutY="98.0" prefHeight="31.0" prefWidth="272.0" promptText="ADMINISTER ID" style="-fx-background-color: white; -fx-border-color: grey;" />
+						<TextField fx:id="adLogLogin" alignment="CENTER" editable="false" layoutX="-80.0" layoutY="180.0" prefHeight="31.0" prefWidth="272.0" styleClass="btn" text="LOGIN" />
+						<Label layoutX="83.0" layoutY="14.0" text="ADMIN LOGIN" textAlignment="RIGHT" underline="true">
+							<font>
+								<Font name="Baskerville Old Face" size="15.0" />
+							</font>
+						</Label>
+						<PasswordField fx:id="adLogPassword" layoutX="-79.0" layoutY="140.0" prefHeight="29.0" prefWidth="272.0" promptText="PASSWORD" style="-fx-background-color: white; -fx-border-color: grey;" />
+						<Label fx:id="adLogBack" layoutX="132.0" layoutY="38.0" styleClass="underline" text="&lt;&lt;BACK" textAlignment="RIGHT">
+							<font>
+								<Font name="Baskerville Old Face" size="15.0" />
+							</font>
+						</Label>
+					</children>
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</AnchorPane>
+			</children>
+		</HBox>
+		<HBox prefHeight="32.0" prefWidth="418.0" spacing="20.0" style="-fx-background-color: WHITE;">
+			<VBox.margin>
+				<Insets bottom="10.0" />
+			</VBox.margin>
+		</HBox>
+	</children>
+</VBox>

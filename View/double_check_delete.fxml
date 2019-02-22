@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="344.0" prefWidth="356.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="154.0" prefWidth="399.0">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cherishPilates.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="154.0" prefWidth="198.0">
+               <children>
+                  <Label layoutX="-22.0" layoutY="102.0" prefHeight="33.0" prefWidth="251.0" style="-fx-font-family: 맑은 고딕;" text="STUDENT INFORMATION">
+                     <font>
+                        <Font name="Ebrima" size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="-35.0" layoutY="127.0" prefHeight="16.0" prefWidth="234.0">
+                     <padding>
+                        <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Separator>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox prefHeight="31.0" prefWidth="310.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="105.0" style="-fx-font-family: 맑은 고딕;" text="이름 ">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="65.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="delDblTxtName" editable="false" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="31.0" prefWidth="310.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="105.0" style="-fx-font-family: 맑은 고딕;" text="StudentID">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="65.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="delDblTxtID" editable="false" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="24.0" prefWidth="359.0" style="-fx-font-family: 맑은 고딕;" text="삭제할 계정정보를 한 번 더 확인해주세요." underline="true">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="112.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="56.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <TextField id="delDblBtnBack" alignment="CENTER" prefHeight="35.0" prefWidth="82.0" style="-fx-background-color: WHITE; -fx-border-color: grey; -fx-text-fill: GREY;" text="&lt;&lt;BACK">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Malgun Gothic" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="105.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField id="delDblBtnDelete" alignment="CENTER" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="Delete">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Malgun Gothic" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

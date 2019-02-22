@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="320.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientController">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutX="17.0" layoutY="113.0" prefHeight="303.0" prefWidth="280.0" />
+      <TextField fx:id="textField" layoutX="83.0" layoutY="433.0" prefHeight="30.0" prefWidth="164.0" />
+      <Button fx:id="btnStartStop" layoutX="20.0" layoutY="434.0" prefHeight="30.0" prefWidth="60.0" text="시작" />
+      <Button fx:id="btnSend" layoutX="249.0" layoutY="433.0" prefHeight="30.0" prefWidth="51.0" text="전송" />
+      <Pane layoutX="9.0" prefHeight="104.0" prefWidth="280.0">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="152.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cherishPilates.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="196.0" layoutY="23.0" prefHeight="29.0" prefWidth="84.0" style="-fx-font-family: 맑은 고딕;" text="고객상담" textAlignment="RIGHT" underline="true">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="166.0" layoutY="61.0" prefHeight="29.0" prefWidth="114.0" style="-fx-font-family: 맑은 고딕;" text="NAME" textAlignment="RIGHT" underline="true">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

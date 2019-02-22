@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="114.0" prefWidth="407.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Pane prefHeight="132.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="144.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../images/cherishPilates.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="106.0" layoutY="58.0" prefHeight="29.0" prefWidth="98.0" style="-fx-font-family: 맑은 고딕;" text="정보변경" textAlignment="RIGHT" underline="true">
+                           <font>
+                              <Font name="Malgun Gothic Semilight" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="33.0" prefWidth="323.0" style="-fx-font-family: 맑은 고딕;" text="PERSONAL INFORMATION">
+                     <font>
+                        <Font name="Ebrima" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="48.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Separator prefHeight="16.0" prefWidth="363.0">
+                     <padding>
+                        <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="37.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+            </HBox>
+            <VBox prefHeight="63.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="188.0" style="-fx-font-family: 맑은 고딕;" text="이메일주소 Email Address">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="48.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField id="eTchInfoID" editable="false" prefHeight="31.0" prefWidth="360.0" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <VBox.margin>
+                        <Insets left="48.0" right="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="63.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="188.0" style="-fx-font-family: 맑은 고딕;" text="전화번호 Mobile">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="48.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField id="eTchInfoPhone" prefHeight="31.0" prefWidth="360.0" promptText="'-'없이 입력해주세요.  ex) 01012345678" style="-fx-background-color: WHITE; -fx-border-color: grey;">
+                     <VBox.margin>
+                        <Insets left="48.0" right="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="33.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="24.0" prefWidth="426.0" style="-fx-font-family: 맑은 고딕;" text="프로필 사진 Profile Photo">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView id="eTchInfoImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <image>
+                  <Image url="@../images/profile_photo.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="56.0" prefWidth="241.0" spacing="4.0">
+               <children>
+                  <HBox prefHeight="23.0" prefWidth="224.0" spacing="5.0" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="33.0" prefWidth="323.0" style="-fx-font-family: 맑은 고딕;" text="LOGIN INFORMATION">
+               <font>
+                  <Font name="Ebrima" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="48.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefHeight="16.0" prefWidth="362.0">
+         <padding>
+            <Insets bottom="8.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" left="39.0" right="39.0" />
+         </VBox.margin>
+      </Separator>
+      <CheckBox id="changePW" mnemonicParsing="false" text="비밀번호 변경">
+         <VBox.margin>
+            <Insets bottom="10.0" left="48.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Malgun Gothic" size="15.0" />
+         </font>
+      </CheckBox>
+      <HBox prefHeight="31.0" prefWidth="274.0" spacing="10.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="100.0" style="-fx-font-family: 맑은 고딕;" text="Password">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField id="eTchInfoNowPW" disable="true" prefHeight="31.0" prefWidth="227.0" promptText="변경 전 비밀번호" style="-fx-background-color: white; -fx-border-color: GREY;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="31.0" prefWidth="274.0" spacing="10.0" style="-fx-background-color: WHITE;">
+         <children>
+            <HBox prefHeight="2.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="130.0" style="-fx-font-family: 맑은 고딕;" text="NEW PW">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField id="eTchInfoNEW" disable="true" prefHeight="31.0" prefWidth="197.0" promptText="변경 할 비밀번호" style="-fx-background-color: white; -fx-border-color: GREY;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label prefHeight="24.0" prefWidth="131.0" style="-fx-font-family: 맑은 고딕;" text="Check New PW">
+               <font>
+                  <Font name="Malgun Gothic Semilight" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </Label>
+            <PasswordField id="eTchInfoNEWCheck" disable="true" prefHeight="31.0" prefWidth="197.0" promptText="변경 할 비밀번호" style="-fx-background-color: white; -fx-border-color: GREY;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="0.0" prefWidth="431.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="431.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <HBox prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: WHITE;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="2.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <TextField id="eTchInfoBtnSave" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="저장">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="145.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField id="eTchInfoBtnExit" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="66.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-text-fill: white;" text="취소">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

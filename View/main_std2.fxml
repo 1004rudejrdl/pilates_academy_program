@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="800.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentController">
+	<children>
+		<Pane prefHeight="119.0" prefWidth="900.0">
+			<children>
+				<ImageView fitHeight="146.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+					<image>
+						<Image url="@../images/cherishPilates.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="704.0" layoutY="41.0" prefHeight="29.0" prefWidth="153.0" text=" 님 환영합니다." textAlignment="CENTER">
+					<font>
+						<Font name="Malgun Gothic Semilight" size="20.0" />
+					</font>
+				</Label>
+				<Label layoutX="621.0" layoutY="3.0" prefHeight="29.0" prefWidth="147.0" text="Student Mode" textAlignment="CENTER">
+					<font>
+						<Font name="Malgun Gothic Semilight" size="18.0" />
+					</font>
+				</Label>
+				<Label fx:id="stuBtnLogout" layoutX="768.0" layoutY="3.0" prefHeight="29.0" prefWidth="89.0" text="LOGOUT" textAlignment="CENTER">
+					<font>
+						<Font name="Malgun Gothic Semilight" size="18.0" />
+					</font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+				</Label>
+				<ImageView fx:id="stuBtnExit" fitHeight="32.0" fitWidth="31.0" layoutX="867.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/cancel.png" />
+					</image>
+				</ImageView>
+				<Label fx:id="stuLblName" layoutX="618.0" layoutY="41.0" prefHeight="29.0" prefWidth="89.0" text="홍길동 " textAlignment="CENTER" underline="true">
+					<font>
+						<Font name="Malgun Gothic Semilight" size="20.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+		<MenuBar prefHeight="38.0" prefWidth="877.0" style="-fx-background-color: white;">
+			<menus>
+				<Menu mnemonicParsing="false">
+					<graphic>
+						<Label fx:id="stuMenuClass" text="강의예약" textAlignment="CENTER">
+							<font>
+								<Font name="Malgun Gothic Semilight" size="20.0" />
+							</font>
+							<padding>
+								<Insets left="10.0" right="10.0" />
+							</padding>
+						</Label>
+					</graphic>
+				</Menu>
+				<Menu mnemonicParsing="false">
+					<graphic>
+						<Label fx:id="stuMenuHealth" text="건강관리">
+							<font>
+								<Font name="Malgun Gothic Semilight" size="20.0" />
+							</font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+						</Label>
+					</graphic>
+				</Menu>
+				<Menu mnemonicParsing="false">
+					<graphic>
+						<Label fx:id="stuMenuChat" text="센터문의">
+							<font>
+								<Font name="Malgun Gothic Semilight" size="20.0" />
+							</font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+						</Label>
+					</graphic>
+				</Menu>
+				<Menu mnemonicParsing="false">
+					<graphic>
+						<Label fx:id="stuMenuMy" text="My">
+							<font>
+								<Font name="Malgun Gothic Semilight" size="20.0" />
+							</font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+						</Label>
+					</graphic>
+				</Menu>
+			</menus>
+			<VBox.margin>
+				<Insets left="23.0" />
+			</VBox.margin>
+         <opaqueInsets>
+            <Insets bottom="7.0" />
+         </opaqueInsets>
+		</MenuBar>
+		<Pane prefHeight="618.0" prefWidth="900.0">
+			<children>
+				<Pane fx:id="stuRsvn" layoutX="10.0" layoutY="10.0" prefHeight="603.0" prefWidth="900.0">
+               <children>
+                  <TabPane layoutX="39.0" prefHeight="610.0" prefWidth="826.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="예약하기">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="506.0" prefWidth="826.0">
+                                 <children>
+                                    <Pane layoutX="-35.0" prefHeight="566.0" prefWidth="861.0">
+                                       <children>
+                                          <Label layoutX="56.0" layoutY="1.0" text="Schedule" underline="true">
+                                             <font>
+                                                <Font name="Baskerville Old Face" size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets top="3.0" />
+                                             </padding>
+                                          </Label>
+                                          <TableView fx:id="sRsrvNewClsTV" layoutX="46.0" layoutY="309.0" prefHeight="202.0" prefWidth="620.0">
+                                             <columns>
+                                                <TableColumn minWidth="0.0" prefWidth="106.0" text="Date" />
+                                                <TableColumn prefWidth="104.0" text="Time" />
+                                                <TableColumn minWidth="0.0" prefWidth="78.0" text="Course" />
+                                                <TableColumn minWidth="0.0" prefWidth="85.0" text="Type" />
+                                                <TableColumn minWidth="0.0" prefWidth="57.0" text="Room" />
+                                                <TableColumn minWidth="0.0" prefWidth="49.0" text="Limit" />
+                                                <TableColumn minWidth="0.0" prefWidth="50.0" text="Now" />
+                                                <TableColumn minWidth="0.0" prefWidth="90.0" text="Teacher" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="sRsrvNewBtnRegi" alignment="CENTER" editable="false" focusTraversable="false" layoutX="544.0" layoutY="516.0" prefHeight="29.0" prefWidth="121.0" text="예약">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="15.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </TextField>
+                                          <ImageView fx:id="sRsrvNewImg" fitHeight="146.0" fitWidth="111.0" layoutX="673.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/yoga.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="681.0" layoutY="49.0" prefHeight="29.0" prefWidth="147.0" text="Register Date" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="sRsrvNewRegiDate" layoutX="681.0" layoutY="87.0" prefHeight="29.0" prefWidth="153.0" styleClass="datelabel" text="rregister" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="681.0" layoutY="130.0" prefHeight="29.0" prefWidth="153.0" text="Expired Date" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="sRsrvNewExpiDate" layoutX="681.0" layoutY="169.0" prefHeight="29.0" prefWidth="153.0" styleClass="datelabel" text="eexpried Date" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="696.0" layoutY="108.0" prefHeight="29.0" prefWidth="18.0" text="~" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="681.0" layoutY="208.0" prefHeight="29.0" prefWidth="88.0" text="잔여횟수:" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="814.0" layoutY="208.0" prefHeight="29.0" prefWidth="22.0" text="회" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="sRsrvNewLftLssns" layoutX="769.0" layoutY="208.0" prefHeight="29.0" prefWidth="48.0" text="XX" textAlignment="CENTER" underline="true">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <GridPane fx:id="gridPane" gridLinesVisible="true" layoutX="45.0" layoutY="40.0" prefHeight="258.0" prefWidth="620.0">
+                                             <children>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="SUN" textFill="RED">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="43.0" text="MON" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="26.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="TUE" GridPane.columnIndex="2">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="WED" GridPane.columnIndex="3">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="THU" GridPane.columnIndex="4">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="FRI" GridPane.columnIndex="5">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="34.0" prefWidth="39.0" text="SAT" textFill="BLUE" GridPane.columnIndex="6">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                   <GridPane.margin>
+                                                      <Insets left="30.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <TextField fx:id="stuDate10" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate12" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate11" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate13" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate14" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate15" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate16" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate36" editable="false" prefHeight="59.0" prefWidth="82.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate35" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate34" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate33" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate32" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate31" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate30" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="3">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate26" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate25" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate24" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate23" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate22" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate21" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate20" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="2">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate40" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate42" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate41" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate56" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate55" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate54" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate53" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate52" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate51" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate50" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="5">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate46" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate45" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate44" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate43" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate64" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate63" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate62" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate61" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate60" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate66" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                                <TextField fx:id="stuDate65" editable="false" prefHeight="45.0" prefWidth="97.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </TextField>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <padding>
+                                                <Insets top="2.0" />
+                                             </padding>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                          </GridPane>
+                                          <Label layoutX="777.0" layoutY="359.0" prefHeight="29.0" prefWidth="62.0" text="선생님" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="sRsrvNewTName" layoutX="683.0" layoutY="359.0" prefHeight="29.0" prefWidth="89.0" text="tName" textAlignment="CENTER" underline="true">
+                                             <font>
+                                                <Font name="Malgun Gothic Semilight" size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="나의 예약">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="sRsvnMyClsTV" layoutX="14.0" layoutY="169.0" prefHeight="371.0" prefWidth="620.0">
+                                       <columns>
+                                          <TableColumn minWidth="0.0" prefWidth="106.0" text="Date" />
+                                          <TableColumn prefWidth="104.0" text="Time" />
+                                          <TableColumn minWidth="0.0" prefWidth="87.0" text="Course" />
+                                          <TableColumn minWidth="0.0" prefWidth="76.0" text="Type" />
+                                          <TableColumn minWidth="0.0" prefWidth="57.0" text="Room" />
+                                          <TableColumn minWidth="0.0" prefWidth="69.0" text="Teacher" />
+                                          <TableColumn minWidth="0.0" prefWidth="57.0" text="Limit" />
+                                          <TableColumn minWidth="0.0" prefWidth="63.0" text="Now" />
+                                       </columns>
+                                    </TableView>
+                                    <Label fx:id="sRsrvMyTtlLssns" layoutX="574.0" layoutY="83.0" prefHeight="29.0" prefWidth="40.0" text="XX" textAlignment="CENTER" underline="true">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="616.0" layoutY="83.0" prefHeight="29.0" prefWidth="31.0" text="회" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="449.0" layoutY="83.0" prefHeight="29.0" prefWidth="121.0" text="총 등록 횟수:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="409.0" layoutY="45.0" prefHeight="29.0" prefWidth="18.0" text="~" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sRsrvMyExpiDate" layoutX="632.0" layoutY="45.0" prefHeight="29.0" prefWidth="161.0" styleClass="datelabel" text="eexpried Date" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="468.0" layoutY="45.0" prefHeight="29.0" prefWidth="147.0" text="Expired Date" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sRsrvMyRegiDate" layoutX="242.0" layoutY="45.0" prefHeight="29.0" prefWidth="147.0" styleClass="datelabel" text="rregister" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="92.0" layoutY="45.0" prefHeight="29.0" prefWidth="140.0" text="Register Date" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="192.0" layoutY="83.0" prefHeight="29.0" prefWidth="88.0" text="잔여횟수:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="347.0" layoutY="83.0" prefHeight="29.0" prefWidth="23.0" text="회" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="sRsrvMyLftLssns" layoutX="296.0" layoutY="83.0" prefHeight="29.0" prefWidth="48.0" text="XX" textAlignment="CENTER" underline="true">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="409.0" layoutY="83.0" prefHeight="29.0" prefWidth="18.0" text="/" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="sRsrvTImg" fitHeight="132.0" fitWidth="131.0" layoutX="662.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/pila.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="sRsrvMyTName" layoutX="653.0" layoutY="273.0" prefHeight="29.0" prefWidth="89.0" text="tName" textAlignment="CENTER" underline="true">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="739.0" layoutY="273.0" prefHeight="29.0" prefWidth="62.0" text="선생님" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="sRsrvMyBtnCncl" alignment="CENTER" editable="false" focusTraversable="false" layoutX="653.0" layoutY="169.0" prefHeight="33.0" prefWidth="132.0" text="예약취소">
+                                       <font>
+                                          <Font name="Malgun Gothic Semilight" size="15.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></Pane>
+            <Pane fx:id="stuHealth" prefHeight="642.0" prefWidth="900.0" visible="false">
+               <children>
+                  <TableView fx:id="stuHealthTV" layoutX="57.0" layoutY="38.0" prefHeight="487.0" prefWidth="542.0">
+                     <columns>
+                        <TableColumn prefWidth="142.0" text="측정일" />
+                        <TableColumn minWidth="0.0" prefWidth="102.0" text="체중(kg)" />
+                        <TableColumn minWidth="0.0" prefWidth="103.0" text="체지방률(%)" />
+                        <TableColumn minWidth="0.0" prefWidth="93.0" text="근육량(kg)" />
+                        <TableColumn minWidth="0.0" prefWidth="101.0" text="BMI (kg/m²)" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="stuHlthChrt" fitHeight="146.0" fitWidth="203.0" layoutX="644.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../images/colorchart.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="stuHlthBtnAdd" fitHeight="62.0" fitWidth="63.0" layoutX="599.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../images/addIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+				<Pane fx:id="stuMy" prefHeight="592.0" prefWidth="900.0" visible="false">
+               <children>
+                  <TableView fx:id="myPaymentTV" layoutX="66.0" layoutY="313.0" prefHeight="246.0" prefWidth="779.0">
+                     <columns>
+                        <TableColumn prefWidth="62.0" text="Course" />
+                        <TableColumn prefWidth="71.0" text="Teacher" />
+                        <TableColumn prefWidth="116.0" text="등록일" />
+                        <TableColumn prefWidth="126.0" text="만료일" />
+                        <TableColumn prefWidth="79.0" text="기간(개월)" />
+                        <TableColumn prefWidth="69.0" text="등록횟수" />
+                        <TableColumn prefWidth="71.0" text="잔여횟수" />
+                        <TableColumn prefWidth="61.0" text="결제" />
+                        <TableColumn prefWidth="124.0" text="총납부액(원)" />
+                     </columns>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </TableView>
+                  <HBox fx:id="sMyAddClsBtn" layoutX="88.0" layoutY="279.0" prefHeight="29.0" prefWidth="106.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../images/addIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="등록">
+                           <font>
+                              <Font name="Malgun Gothic" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="1.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="mySNamelbl" layoutX="181.0" layoutY="47.0" prefHeight="29.0" prefWidth="121.0" text="stuName" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="302.0" layoutY="47.0" prefHeight="29.0" prefWidth="121.0" text="회원님의 정보" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="181.0" layoutY="96.0" prefHeight="29.0" prefWidth="121.0" text="Student ID :" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mySIDlbl" layoutX="302.0" layoutY="96.0" prefHeight="29.0" prefWidth="230.0" text="stuID" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="181.0" layoutY="138.0" prefHeight="29.0" prefWidth="79.0" text="Phone :" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="myPhonelbl" layoutX="302.0" layoutY="138.0" prefHeight="29.0" prefWidth="230.0" text="phone" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="myImgView" fitHeight="173.0" fitWidth="147.0" layoutX="543.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../images/yoga.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="myInfoChangeBtn" alignment="CENTER" editable="false" focusTraversable="false" layoutX="707.0" layoutY="93.0" prefHeight="30.0" prefWidth="106.0" text="정보 변경">
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TextField>
+               </children></Pane>
+				<Pane fx:id="stuAskToAdmin" prefHeight="592.0" prefWidth="900.0" visible="false">
+               <children>
+                  <Label layoutX="63.0" layoutY="105.0" prefHeight="32.0" prefWidth="230.0" styleClass="namelabel" text="Cherish Pilates" underline="true">
+                     <font>
+                        <Font name="Baskerville Old Face" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="431.0" prefHeight="29.0" prefWidth="320.0" text="위치: 성동구 무학로 2길 54 신방빌딩" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="460.0" prefHeight="29.0" prefWidth="293.0" text="(주차 시 주차요금이 발생합니다.)" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="190.0" prefHeight="29.0" prefWidth="268.0" text="대표전화 : 02-441-6006" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="254.0" prefHeight="29.0" prefWidth="286.0" text="이메일 :  admin@cherishpila.com" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sangDamBtn" layoutX="92.0" layoutY="370.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="146.0" styleClass="mapTxt" text="1:1 채팅상담" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Batang" size="17.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="60.0" layoutY="324.0" prefHeight="29.0" prefWidth="286.0" text="상담가능 시간 : 09:30~20:00" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="sangDamImgBtn" fitHeight="50.0" fitWidth="48.0" layoutX="232.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@../images/chat.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="mapBtn" fitHeight="50.0" fitWidth="48.0" layoutX="488.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                     <image>
+                        <Image url="@../images/location.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="mapTxtBtn" layoutX="392.0" layoutY="430.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="89.0" styleClass="mapTxt" text="지도 확인" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Batang" size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="99.0" layoutY="489.0" prefHeight="29.0" prefWidth="293.0" text="왕십리역 2번출구 앞" textAlignment="CENTER">
+                     <font>
+                        <Font name="Malgun Gothic Semilight" size="19.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+			</children>
+		</Pane>
+	</children>
+</VBox>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TchLoginController">
+	<children>
+		<HBox prefHeight="209.0" prefWidth="418.0">
+			<children>
+				<ImageView fx:id="tLogImg" fitHeight="168.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/cherishPilates.png" />
+					</image>
+				</ImageView>
+				<AnchorPane prefHeight="182.0" prefWidth="213.0">
+					<children>
+						<TextField fx:id="tLogId" layoutX="-81.0" layoutY="68.0" prefHeight="31.0" prefWidth="272.0" promptText="TEACHER ID (EMAIL)" style="-fx-background-color: white; -fx-border-color: grey;" />
+						<TextField fx:id="tLogLogin" alignment="CENTER" editable="false" layoutX="-80.0" layoutY="150.0" prefHeight="31.0" prefWidth="272.0" styleClass="btn" text="LOGIN" />
+						<Label layoutX="63.0" layoutY="14.0" text="TEACHER LOGIN" textAlignment="RIGHT" underline="true">
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+							<font>
+								<Font name="Baskerville Old Face" size="15.0" />
+							</font>
+						</Label>
+						<PasswordField fx:id="tLogPassword" layoutX="-79.0" layoutY="110.0" prefHeight="29.0" prefWidth="272.0" promptText="PASSWORD" style="-fx-background-color: white; -fx-border-color: grey;" />
+                  <Label fx:id="tLogBack" layoutX="130.0" layoutY="36.0" styleClass="underline" text="&lt;&lt;BACK" textAlignment="RIGHT">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Baskerville Old Face" size="15.0" />
+                     </font>
+                  </Label>
+					</children>
+				</AnchorPane>
+			</children>
+			<VBox.margin>
+				<Insets top="15.0" />
+			</VBox.margin>
+		</HBox>
+		<HBox prefHeight="2.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: WHITE;">
+			<children>
+				<TextField fx:id="tLogFGID" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="100.0" styleClass="underline" text="FORGOT ID?">
+					<font>
+						<Font name="Baskerville Old Face" size="13.0" />
+					</font>
+					<HBox.margin>
+						<Insets left="15.0" />
+					</HBox.margin>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</TextField>
+				<Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" />
+				<TextField fx:id="tLogFGPW" alignment="CENTER" editable="false" prefHeight="31.0" prefWidth="105.0" styleClass="underline" text="FORGOT PW?">
+					<font>
+						<Font name="Baskerville Old Face" size="13.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</TextField>
+				<Separator orientation="VERTICAL" prefHeight="200.0" />
+				<TextField fx:id="tLogJoin" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="100.0" styleClass="underline" text="JOIN">
+					<font>
+						<Font name="Baskerville Old Face" size="16.0" />
+					</font>
+				</TextField>
+			</children>
+			<VBox.margin>
+				<Insets bottom="10.0" />
+			</VBox.margin>
+		</HBox>
+	</children>
+</VBox>
